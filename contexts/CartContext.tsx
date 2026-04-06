@@ -16,6 +16,7 @@ interface CartContextType {
   addToCart: (product: Product, quantity?: number) => void;
   removeFromCart: (id: number) => void;
   updateQuantity: (id: number, quantity: number) => void;
+  clearCart: () => void;
   totalItems: number;
   totalPrice: number;
 }
@@ -55,11 +56,15 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     saveCart(cart.map(item => item.id === id ? { ...item, quantity } : item));
   };
 
+  const clearCart = () => {
+    saveCart([]);
+  };
+
   const totalItems = cart.reduce((acc, i) => acc + i.quantity, 0);
   const totalPrice = cart.reduce((acc, i) => acc + i.price * i.quantity, 0);
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, totalItems, totalPrice }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart, totalItems, totalPrice }}>
       {children}
     </CartContext.Provider>
   );
@@ -67,6 +72,6 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
 export const useCart = () => {
   const context = useContext(CartContext);
-  if (!context) throw new Error('useCart must be used within a CartProvider');
+  if (!context) throw new Error('useCart must be used within CartProvider');
   return context;
 };

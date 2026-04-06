@@ -1,8 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getOrdersByUser, createOrder } from '../../../lib/orders-utils';
-import { getCartFromRequest } from '../../../lib/cart-utils'; // nous allons créer ce fichier
 
-// Helper pour extraire le panier (on va le passer dans le body)
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { userId } = req.query;
   const userIdNum = parseInt(userId as string);
