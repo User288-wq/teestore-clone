@@ -1,0 +1,66 @@
+[
+  {
+    "description": "Coton premium.",
+    "id": 1,
+    "category": "men",
+    "price": 34.99,
+    "name": "Men's Casual Khaki T-Shirt",
+    "image": "/images/tshirt-uni-sols-coton-premium-col-rond-rouge-tsh440.JPG"
+  },
+  {
+    "description": "Rouge vif.",
+    "id": 2,
+    "category": "men",
+    "price": 29.99,
+    "name": "Men's Classic Red T-Shirt",
+    "image": "/images/tshirt-uni-sols-coton-premium-col-rond-vert-pomme-tsh429.JPG"
+  },
+  {
+    "description": "Vert pomme.",
+    "id": 3,
+    "category": "men",
+    "price": 32.99,
+    "name": "Men's Apple Green T-Shirt",
+    "image": "/images/tshirt-uni-sols-imperial-coton-premium-col-rond-kaki-tsh641.JPG"
+  },
+  {
+    "description": "Floral léger.",
+    "id": 4,
+    "category": "women",
+    "price": 89.99,
+    "name": "Women's Floral Dress",
+    "image": "/images/2008309_14002_V2.AVIF"
+  },
+  {
+    "description": "T-shirt doux.",
+    "id": 5,
+    "category": "women",
+    "price": 39.99,
+    "name": "Women's Round Neck T-Shirt",
+    "image": "/images/2008718_10003_V3.AVIF"
+  },
+  {
+    "description": "Top tendance.",
+    "id": 6,
+    "category": "women",
+    "price": 29.99,
+    "name": "Women's Summer Top",
+    "image": "/images/2008757_10003_V2.AVIF"
+  },
+  {
+    "description": "Veste enfant.",
+    "id": 7,
+    "category": "kids",
+    "price": 49.99,
+    "name": "Kids Colorblock Jacket",
+    "image": "/images/2008768_11835_V9.AVIF"
+  },
+  {
+    "description": "Sweat à capuche.",
+    "id": 8,
+    "category": "kids",
+    "price": 44.99,
+    "name": "Kids Printed Hoodie",
+    "image": "/images/rondbashp-tshirt-femme.WEBP"
+  }
+]
